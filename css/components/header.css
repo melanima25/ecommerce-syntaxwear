@@ -133,7 +133,9 @@
 		border-bottom: 1px solid #eeeeee;
 		padding: 0.3rem 0;
 		font-size: 1rem;
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.menu-toggle:checked ~ .nav-container{
