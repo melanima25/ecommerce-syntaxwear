@@ -1,1 +1,79 @@
 /* product-grid.css */
+
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+.male{
+    grid-area: male;
+    background-image: url(../../images/products/modelo-masculino.jpg);
+}
+
+.sneaker-purple{
+    grid-area: sneaker-purple;
+    background-image: url(../../images/products/roxo-verde-grid.jpg);
+}
+
+.female{
+    grid-area: female;
+    background-image: url(../../images/products/modelo-feminino.jpg);
+}
+
+.sneaker-color{
+    grid-area: sneaker-color;
+    background-image: url(../../images/products/moderno-grid.jpg);
+}
+
+.sneaker-white{
+    grid-area: sneaker-white;
+    background-image: url(../../images/products/preto-branco.jpg);
+}
+
+.sneaker-gray{
+    grid-area: sneaker-gray;
+    background-image: url(../../images/products/futurista-grid.jpg);
+
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+    "male male sneaker-purple sneaker-purple"
+    "male male female sneaker-color"
+    "sneaker-white sneaker-white female sneaker-gray";
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.top1-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title{
+    color: #ededed;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-subtitle{
+    color: #ededed;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group{
+    display: flex;
+    gap: 10px;
+}
