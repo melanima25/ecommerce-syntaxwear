@@ -1,1 +1,102 @@
 /* footer.css */
+.site-footer{
+    background-color: #333333;
+    color: #fff;
+}
+
+.footer-content{
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.footer-nav{   
+    display: flex; 
+}
+
+.footer-nav {   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h4 {
+    color: #ededed;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col ul li a:hover {
+    color: #ededed;
+    text-decoration: underline;
+}
+
+
+.newsletter-form label{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.newsletter-form input{
+    border-radius: 1.875rem;
+    color: #aaa;
+    padding: 0.75rem 1.25rem;
+    width: 21.5rem;
+}
+
+.footer-social{
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.social-icons{
+    display: flex;
+}
+
+.social-icons a{
+    padding-right: 1.25rem;
+}
+.social-icons a:hover img{
+    opacity: 0.7;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+}
