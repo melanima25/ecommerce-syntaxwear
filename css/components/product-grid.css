@@ -77,3 +77,37 @@
     display: flex;
     gap: 10px;
 }
+
+@media (max-width: 768px){
+    .product-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "male male"
+        "sneaker-white sneaker-white"
+        "female sneaker-color"
+        "female sneaker-gray"
+        "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+        
+    }
+
+    .male{
+        min-height: 500px;
+
+    }
+
+    .female{
+        min-height: 370px;
+    }
+
+    .sneaker-white, .sneaker-purple{
+        min-height: 190px;
+    }
+
+    .sneaker-color, .sneaker-gray{
+        min-height: 185px;
+    }
+}
+    
